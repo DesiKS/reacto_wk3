@@ -69,7 +69,7 @@ class: center middle
 
 ---
 
-### RE
+### RE-
 
 This is a good place to have your interviewee draw out the graph and think through how they want to walk through the nodes.
 
@@ -83,7 +83,7 @@ This is a good place to have your interviewee draw out the graph and think throu
 
 ---
 
-### AC
+### -AC-
 
 This problem is essentially a DFS/BFS problem. Either algorithm is sufficient. The only catch is that graphs can be cyclic. In other words, it's possible for a loop to exist in the graph.
 
@@ -95,7 +95,7 @@ This problem is essentially a DFS/BFS problem. Either algorithm is sufficient. T
 
 ---
 
-### TO
+### -TO
 
 Have your interviewee test their implementation on acyclic and cyclic graphs.
 
@@ -224,6 +224,7 @@ Consider the tradeoffs between using an adjacency matrix (AM) and an adjacency l
   * AL O(V + E), AM O(V^2)
 * Better overall
   * Adjacency List
+  
+Reference: The Algorithm Design Manual: Skiena, Steven S, Second Edition
 
-Reference: Comparison from The Algorithm Design Manual, Skiena - second Edition - page 152
 ---
