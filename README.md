@@ -156,11 +156,11 @@ const doesPathExist = (graph, start, target, visited = {}) => {
 * Both DFS and BFS take O(V + E) time where V is the number of vertices or nodes and E is the number of edges. We MUST attempt to visit every node, which will take us through potentially many edges.
 
   * For acyclic graphs, we might visit every node and hit the leaves
-  * For cyclic graphs, the cycle might not occur until a 'leaf'
+  * For cyclic graphs, the cycle might not occur until a 'leaf' is reached
   * For dense graphs, edges will dominate
   * For sparse graphs, vertices will dominate
 
-* Keeping track of a 'visited' object means we need O(v) additional space
+* Keeping track of a 'visited' object means we need O(V) additional space
 
 ---
 ## Summary
@@ -188,8 +188,6 @@ In javascript, this table would be represented using an array of arrays or objec
 
 ---
 
-## Discussion
-
 Adjacency matrix:
 
         a  c  s  r
@@ -208,22 +206,22 @@ This table reads as follows:<br>
 
 ---
 
-## Discussion
-
-Consider the tradeoffs between using one of these data structures or the other. Which do we prefer for the following operations?
+Consider the tradeoffs between using an adjacency matrix (AM) and an adjacency list (AL) for the following operations:
 
 * Testing if a given edge exists
-  * Adjacency matrix O(1)
-* Finding the # of edges of a vertex
-  * Adjacency list O(1)
-* Insertion/deletion of edges
-  * AM O(1), AL O(d) where d is degree of vertex
+  * AM O(1)
+* Finding the number of edges of a vertex
+  * AL O(1)
+* Insertion of edges
+  * AM O(1), AL O(1) 
+* Deletion of edges
+  * AM O(1), AL O(E) 
 * Memory usage for sparse graphs
-  * AL O(v + e), AM O(v^2)
+  * AL O(V + E), AM O(V^2)
 * Memory usage for dense graphs
-  * AM O(v^2)
+  * AM O(V^2)
 * Graph traversal
-  * AL O(v + e), AM O(n^2)
+  * AL O(V + E), AM O(V^2)
 * Better overall
   * Adjacency List
 
