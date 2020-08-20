@@ -225,5 +225,5 @@ Consider the tradeoffs between using an adjacency matrix (AM) and an adjacency l
 * Better overall
   * Adjacency List
 
-Comparison from The Algorithm Design Manual, Skiena - second Edition - page 152
+Reference: Comparison from The Algorithm Design Manual, Skiena - second Edition - page 152
 ---
