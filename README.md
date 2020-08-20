@@ -57,6 +57,7 @@ const graph = {
 }
 
 doesPathExist(graph, 'a', 'a') // true
+doesPathExist(graph, 'a', 'm') // false
 doesPathExist(graph, 'c', 'c') // true
 doesPathExist(graph, 'r', 's') // true
 doesPathExist(graph, 's', 'a') // false
