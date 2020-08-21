@@ -228,3 +228,7 @@ Consider the tradeoffs between using an adjacency matrix (AM) and an adjacency l
 Reference: The Algorithm Design Manual: Skiena, Steven S, Second Edition
 
 ---
+
+## Additional Resources
+
+Desi's repl: https://repl.it/@shunturova/RoyalblueDescriptiveCustomer#main.js
